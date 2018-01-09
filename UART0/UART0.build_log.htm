@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\RAGAB\TIVA C\UART0\UART0.uvproj
+Project File Date:  08/02/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=720 RO-data=636 RW-data=0 ZI-data=608  
+".\UART0.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\RAGAB\\TIVA C\\UART0\\UART0.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+et not created
+list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\UART0.axf" - 1 Error(s), 1 Warning(s).
+Target not created
+ror:  #20: identifier "UART0_IBRD_R" is undefined
+      UART0_IBRD_R=104;
+uart0.c(14): error:  #20: identifier "UART0_FBRD_R" is undefined
+      UART0_FBRD_R=11;
+uart0.c(16): error:  #20: identifier "UART0_LCRH_R" is undefined
+      UART0_LCRH_R =60;//frame is 8 bit
+uart0.c(19): error:  #20: identifier "GPIO_PORTA_DEN_R" is undefined
+      GPIO_PORTA_DEN_R   |=0X03;
+uart0.c(20): error:  #20: identifier "GPIO_PORTA_AFSEL_R" is undefined
+      GPIO_PORTA_AFSEL_R |=0X03;
+uart0.c(21): error:  #20: identifier "GPIO_PORTA_DIR_R" is undefined
+      GPIO_PORTA_DIR_R   |=3;
+uart0.c(22): error:  #20: identifier "GPIO_PORTA_PCTL_R" is undefined
+      GPIO_PORTA_PCTL_R   =0X11;
+uart0.c(28): error:  #20: identifier "UART0_FR_R" is undefined
+      while(!(UART0_FR_R &(1<<7)));
+uart0.c(29): error:  #20: identifier "UART0_DR_R" is undefined
+      UART0_DR_R = byte;
+uart0.c(33): error:  #20: identifier "UART0_DR_R" is undefined
+      while(!(UART0_DR_R &UART_FR_RXFE));
+uart0.c(33): error:  #20: identifier "UART_FR_RXFE" is undefined
+      while(!(UART0_DR_R &UART_FR_RXFE));
+uart0.c(42): warning:  #111-D: statement is unreachable
+        return 0;
+uart0.c: 1 warning, 14 errors
+".\UART0.axf" - 14 Error(s), 1 Warning(s).
+Target not created
